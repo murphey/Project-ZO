@@ -1,0 +1,89 @@
+/** Navigation **/
+body {  
+    background-color: #ece8e5;  
+}  
+/*.navbar{background: red; position: relative; float: left; width: 100%; } .navbar .logo{width: 100; position:relative; float: left;}
+*/
+header {
+background:#fff;
+position:relative;
+width:100%;
+padding:5px 0px;/*  top bottom  right0*/
+top:0;
+border-bottom:7px solid #e8e8e8;
+margin:0 auto;
+}
+/* box-shadow: 0 2px 18px #36373B inset;
+ */
+ .image{
+max-width:100%;
+float:left;
+line-height:20px;
+margin:0px 5px;
+text-align:center;
+}
+.row:before,.clearfix:before,.clearfix:after, .row:after{
+content:" ";
+display: table;
+}
+.row:after, .clearfix:after{
+clear:both;
+
+}
+a {text-decoration:none;
+color:inherrit;}
+nav ul{
+
+background:#;
+overflow:hidden;
+color:red;
+padding:0;
+margin:0;
+float:left;
+transition:max-height 0.4s;
+-webkit-transition:max-height 0.4s;
+-moz-transition:max-height 0.4s;
+-ms-transition:max-height 0.4s;
+-o-transition:max-height 0.4s;
+text-align:center;
+}
+nav ul li:hover{background:#399077;}
+nav ul li{
+display:inline-block;
+padding:20px;
+}
+#main input{margin:5px; padding: 10px; width: 90%;}
+#main label{ margin: 5px;}
+input[type="submit"]{width: 200px !important;}
+#main{
+background:#f5f5f5;
+line-height:1.5em;
+font-size:0.9em;
+padding:40px;
+width:75%;
+margin:0 auto;
+}
+.form{background: gray; width:300px; padding: 10px;}
+
+nav.admin{background:#f5f5f5; padding:5px; color:white;}
+.handle{width:100%; display:none;float:left; background:red !important; text-align:left;  box-sizing:border-box; padding: 15px 10px; color:white; cursor:pointer; }
+@media screen and (max-width: 580px) {
+nav ul {max-height:0; width:100%; background:gray;}
+.navbar img{margin-bottom:30px;}
+.showing{max-height:20em;}
+nav ul li{ width:100%; border-bottom:dotted 1px #f2f2f2;
+box-sizing:border-box;
+text-align: left;
+padding:12px;}
+nav.admin{display:none;}
+.handle{display:block; }
+header {width:100%;}
+header > div > nav > ul > li:nth-child(1){border-top:solid 5px;}
+
+#main{width:92%; padding:8px; margin:3px;}
+.image{margin:0;}
+#main input{margin:3px; padding: 5px; width: 95%;}
+
+input[type="submit"]{width: 150px !important;}
+.form{width: 100%;}
+}
