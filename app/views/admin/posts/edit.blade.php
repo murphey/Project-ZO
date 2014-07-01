@@ -1,7 +1,10 @@
 @extends('admin.master')
 @section('content')
-<div class="col-md-12">
-	{{ Form::model($post, array('method' => 'PATCH', 'route' => array('posts.update', $post->id))) }}
+<div id="main-admin regular">
+<div class="row"></div>
+<div class="sub-wrap">
+<div class="col-md-13">
+	{{ Form::model($post, array('method' => 'PATCH', 'files' => true, 'route' => array('posts.update', $post->id),)) }}
 	@if($errors->any())
 		<div class="alert-danger">
 			<a href="#" class="close" data-dismiss="alert">&times;</a>
@@ -9,7 +12,7 @@
 		</div>
 	@endif
 	<br>
-	<div class="control-group">
+	<div class="control-group title">
 		{{ Form::label('posts_title', 'Titel') }}
 		{{ Form::text('posts_title', Input::old('posts_title'), array('class' => 'form-control', 'placeholder' => 'Zet A.U.B uw titel hier...')) }}
 	</div>
@@ -34,6 +37,8 @@
 	{{ link_to_route('posts.index', 'Cancel', null, array('class' => 'btn btn-warning')) }}
 	{{ Form::close() }}
 
+</div>
+</div>
 </div>
 <br>
 @stop

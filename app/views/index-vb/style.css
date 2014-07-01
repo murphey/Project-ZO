@@ -1,0 +1,176 @@
+body{
+	margin: 0;
+	padding: 0;
+	font-family: 'Ubuntu', 'sans-serif';
+}
+
+#content_box{
+	width: 71.6%;
+	height: 139px;
+	color: white;
+	margin: 30px auto;
+	padding: 0 25px 0 25px;
+	background-color: #9e2063; 
+}
+
+#nav{
+	width: 100%;
+	height: 138px;
+	background-color: white;
+	/* padding: 60px 20px 0 619.5px; */
+	z-index: 1000;
+	position: fixed;
+	box-shadow: 0px 0px 20px #000000;
+}
+
+#fullpage{
+	background-size:cover;
+	background-position:center;
+	max-width: 100%;
+	height: 86.6%;
+	background-image: url('images/fullpage.jpg');
+	background-repeat: no-repeat;
+	position: static;
+	padding-top: 130px;
+
+}
+
+#nieuws{
+	width: 74.3%;
+	height: 50%;
+	margin: 0 auto;
+
+}
+
+#footer{
+	width: 100%;
+	height: 21.6%;
+	box-shadow: 0px 0px 20px #000000;
+}
+
+#content1{
+	width: 100%;
+	height: 220px;
+	background-color: white;
+}
+
+.logo{
+	width: 350px;
+	height: 130px;
+	background-image: url('images/logo.png');
+	background-position: right;
+	float: left;
+	position: relative;
+	z-index: 1100;
+	background-repeat: no-repeat;
+}
+
+h2{
+	color: black;
+	margin: 0;
+	padding: 0;
+	word-spacing: 50px;
+	font-size: 14pt;
+	font-weight: 300;
+	position: relative;
+	z-index: 1100;
+	padding: 59px 0 0 400px;
+}
+
+#nav a{
+	padding: 9px 0 0 0%;
+	color: black;
+	text-decoration: none;
+}
+#nav a:hover{
+	color: #9e1f63;
+}
+
+#tabs a{
+	color: white;
+	text-decoration: none;
+	font-size: 20px;
+	font-weight: 300;
+}
+
+#tabs{
+	max-width: 89%;
+	width: 100%;
+	position: absolute;
+	float: left;
+	bottom: 0;
+	padding: 0 0 0 9.5%;
+	display: inline-block;
+}
+
+.tab1{
+	width: 306px;
+	height: 58px;
+	background-color: #9e1f63;
+	float: left;
+	margin: 0 5.3% 0 3.4%;
+	padding: 12px 25px 10px 25px;
+	display: inline-block;
+	z-index: 200;
+	position: absolute;
+}
+
+
+.tab2{
+	width: 307px;
+	height: 27px;
+	background-color: #29b473;
+	float: left;
+	margin: 1 37.3% 0 31.7%;
+	padding: 12px 25px 10px 25px;
+	display: inline-block;
+
+	z-index: 200;
+	position: absolute;
+}
+
+.tab3{
+	width: 307px;
+	height: 27px;
+	background-color: #f6931e;
+	float: left;
+	margin: 1 5.3% 0 66.2%;
+	padding: 12px 25px 10px 25px;
+	display: inline-block;
+	z-index: 300;
+}
+
+.arrow-down{
+	width: 17px;
+	height: 12px;
+	background-image: url("images/arrow-down.png");
+	float: right;
+	margin: 8px 0 0 0;
+}
+
+#nieuwsblok1{
+	font-size: 12px;
+	height: 79%;
+	width: 28.2%;
+	margin-top: 2%;
+	float: left;
+	padding: 20px 50px 20px 0;
+}
+
+#nieuwsblok2{
+	font-size: 12px;
+	height: 79%;
+	width: 28.2%;
+	margin-top: 2%;
+	float: left;
+	padding: 20px 50px 20px 50px;
+}
+
+#nieuwsblok3{
+	font-size: 12px;
+	height: 79%;
+	width: 29.2%;
+	margin-top: 2%;
+	float: left;
+	padding: 20px 0 20px 50px;
+}

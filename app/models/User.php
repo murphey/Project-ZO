@@ -11,6 +11,10 @@ class User extends Eloquent implements UserInterface, RemindableInterface {
 	 * @var string
 	 */
 	protected $table = 'users';
+		public static $rules = array(
+     'admin_name' => 'required|unique:users',
+     'email' => 'required'
+		);
 	protected $fillable = array('admin_name', 'email', 'password', 'code', 'password_temp', 'user_level');
 	/**
 	 * The attributes excluded from the model's JSON form.
@@ -49,6 +53,10 @@ class User extends Eloquent implements UserInterface, RemindableInterface {
 		return $this->email;
 	}
 	public function post(){
-		return $this->hasMany('Posts'); //change
+		return $this->hasMany('Post'); //change
 	}
+		public function pages(){
+		return $this->hasMany('Pages'); //change
+	}
+
 }

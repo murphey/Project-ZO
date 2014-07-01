@@ -1,0 +1,365 @@
+/*Vaste css*/
+
+body {
+	margin:0;
+	padding:0; 
+	font-family: 'Ubuntu', 'sans-serif';
+}
+
+
+#nav{
+	width: 100%;
+	height: 138px;
+	background-color: white;
+	/* padding: 60px 20px 0 619.5px; */
+	z-index: 1000;
+	position: fixed;
+	box-shadow: 0px 0px 20px #000000;
+}
+
+#nav a{
+	padding: 9px 0 0 0%;
+	color: black;
+	text-decoration: none;
+}
+#nav a:hover{
+	color: #9e1f63;
+}
+
+.logo{
+	width: 350px;
+	height: 130px;
+	background-image: url('images/logo.png');
+	background-position: right;
+	float: left;
+	position: relative;
+	z-index: 1100;
+	background-repeat: no-repeat;
+}
+
+h2{
+	color: black;
+	margin: 0;
+	padding: 0;
+	word-spacing: 50px;
+	font-size: 14pt;
+	font-weight: 300;
+	position: relative;
+	z-index: 1100;
+	padding: 59px 0 0 400px;
+}
+
+#footer{
+	width: 100%;
+	max-height: 15%;
+	min-height: 15%;
+	margin-top: 50px;
+	box-shadow: 0px 0px 20px #000000;
+	float: left;
+	position: relative;
+}
+
+
+/*Info page css*/
+
+#wrapper {
+	width: 100%;
+	margin: 0 16% auto;
+}
+
+#content_left{
+	width: 30%;
+	margin-top: 10%;
+	color: #363636;
+	font-size: 14px;
+	float: left;
+	text-align: justify;;
+}
+
+#content_right{
+	width: 30%;
+	margin-left: 9%;
+	margin-top: 10%;
+	color: #363636;
+	font-size: 14px;
+	float: left;
+}
+
+span.green {
+	font-size: 18px;
+	font-weight: bold;
+	color: #29b473;
+}
+
+span.purple {
+	font-size: 18px;
+	font-weight: bold;
+	color: #9e1f63;
+}
+
+span.orange {
+	font-size: 18px;
+	font-weight: bold;
+	color: #f6931e;
+}
+
+span.h1 {
+	font-size: 38px;
+	font-weight: bold;
+	color: #9e1f63;
+}
+
+p.quote {
+	font-size: 38px;
+	font-weight: bold;
+	margin-top: 55px;
+	float: left;
+}
+
+#content_left p a {
+	font-size: 14px;
+	font-weight: 700;
+	font-style: italic;
+	text-decoration: none;
+	color: #be1e2d;
+}
+
+.img_r {
+	width: 544px;
+	height: 320px;
+	background-image: url('images/toegang.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	float: left;
+}
+
+/*Visuele beperkingen*/
+
+.vis .titel{
+	height: 55px;
+	width: 320px;
+	background-color: #9e1f63;
+	display: none;
+}
+
+.vis .tekst{
+	height: 55px;
+	width: 320px;
+	font-family: 'Ubuntu', 'sans-serif';
+	color: white;
+	font-size: 20px;
+	padding: 13px 0 0 20px;
+	font-weight: 400;
+}
+
+
+.vis .tekst_description{
+	font-family: 'Ubuntu', 'sans-serif';
+	color: white;
+	font-size: 18px;
+	padding: 13px 0 0 20px;
+	font-weight: 300;
+}
+
+.vis .afbeelding{
+	height: 240px;
+	width: 320px;
+	background-repeat: no-repeat;
+	-webkit-transition: background-image 0.2s ease-in-out;
+	-moz-transition: background-image 0.2s ease-in-out;
+	-ms-transition: background-image 0.2s ease-in-out;
+	-o-transition: background-image 0.2s ease-in-out;
+	transition: background-image 0.2s ease-in-out;
+
+}
+.vis .afbeelding{
+	background-image: url('images/vis_overlay.png');
+}
+.vis .afbeelding-over{
+	background-image: url(images/vis.png);
+}
+
+.vis .description{
+	height: 318px;
+	width: 320px;
+	background-color: #9e1f63;
+	display: none;
+}
+
+
+/*Auditieve beperkingen*/
+
+.aud .titel{
+	height: 55px;
+	width: 320px;
+	background-color: #29b473;
+	display: none;
+}
+
+.aud .tekst{
+	height: 55px;
+	width: 320px;
+	font-family: 'Ubuntu', 'sans-serif';
+	color: white;
+	font-size: 20px;
+	padding: 13px 0 0 20px;
+	font-weight: 400;
+}
+
+
+.aud .tekst_description{
+	font-family: 'Ubuntu', 'sans-serif';
+	color: white;
+	font-size: 18px;
+	padding: 13px 0 0 20px;
+	font-weight: 300;
+}
+
+.aud .afbeelding{
+	height: 240px;
+	width: 320px;
+	background-repeat: no-repeat;
+	-webkit-transition: background-image 0.2s ease-in-out;
+	-moz-transition: background-image 0.2s ease-in-out;
+	-ms-transition: background-image 0.2s ease-in-out;
+	-o-transition: background-image 0.2s ease-in-out;
+	transition: background-image 0.2s ease-in-out;
+
+}
+.aud .afbeelding{
+	background-image: url('images/aud_overlay.png');
+}
+.aud .afbeelding-over{
+	background-image: url(images/aud.png);
+}
+.aud .vis .afbeelding{
+	background-image: url('images/aud_overlay.png');
+}
+.aud .vis .afbeelding-over{
+	background-image: url(images/aud.png);
+}
+
+.aud .description{
+	height: 318px;
+	width: 320px;
+	background-color: #29b473;
+	display: none;
+}
+
+/* lichamelijke beperkingen*/
+
+.lic .titel{
+	height: 55px;
+	width: 320px;
+	background-color: #f6921e;
+	display: none;
+}
+
+.lic .tekst{
+	height: 55px;
+	width: 320px;
+	font-family: 'Ubuntu', 'sans-serif';
+	color: white;
+	font-size: 20px;
+	padding: 13px 0 0 20px;
+	font-weight: 400;
+}
+
+
+.lic .tekst_description{
+	font-family: 'Ubuntu', 'sans-serif';
+	color: white;
+	font-size: 18px;
+	padding: 13px 0 0 20px;
+	font-weight: 300;
+}
+
+.lic .afbeelding{
+	height: 240px;
+	width: 320px;
+	background-repeat: no-repeat;
+	-webkit-transition: background-image 0.2s ease-in-out;
+	-moz-transition: background-image 0.2s ease-in-out;
+	-ms-transition: background-image 0.2s ease-in-out;
+	-o-transition: background-image 0.2s ease-in-out;
+	transition: background-image 0.2s ease-in-out;
+
+}
+.lic .afbeelding{
+	background-image: url('images/lic_overlay.png');
+}
+.lic .afbeelding-over{
+	background-image: url(images/lic.png);
+}
+
+.lic .description{
+	height: 318px;
+	width: 320px;
+	background-color: #f6921e;
+	display: none;
+}
+
+/* overige beperkingen*/
+
+.ove .titel{
+	height: 55px;
+	width: 320px;
+	background-color: #017fb2;
+	display: none;
+}
+
+.ove .tekst{
+	height: 55px;
+	width: 320px;
+	font-family: 'Ubuntu', 'sans-serif';
+	color: white;
+	font-size: 20px;
+	padding: 13px 0 0 20px;
+	font-weight: 400;
+}
+
+
+.ove .tekst_description{
+	font-family: 'Ubuntu', 'sans-serif';
+	color: white;
+	font-size: 18px;
+	padding: 13px 0 0 20px;
+	font-weight: 300;
+}
+
+.ove .afbeelding{
+	height: 240px;
+	width: 320px;
+	background-repeat: no-repeat;
+	-webkit-transition: background-image 0.2s ease-in-out;
+	-moz-transition: background-image 0.2s ease-in-out;
+	-ms-transition: background-image 0.2s ease-in-out;
+	-o-transition: background-image 0.2s ease-in-out;
+	transition: background-image 0.2s ease-in-out;
+
+}
+.ove .afbeelding{
+	background-image: url('images/ove_overlay.png');
+}
+.ove .afbeelding-over{
+	background-image: url(images/ove.png);
+}
+
+.ove .description{
+	height: 318px;
+	width: 320px;
+	background-color: #017fb2;
+	display: none;
+}
+
+
+.effect{
+	float: left;
+	height: 613px;
+	width: 25%;
+}	
+
+.content{
+	width: 1280px;
+	clear: both;
+}

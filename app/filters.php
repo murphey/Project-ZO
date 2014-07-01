@@ -22,9 +22,6 @@ App::after(function($request, $response)
 	//
 });
 
-App::missing(function(){
-	return 'pagina bestaat niet';
-});
 
 /*
 |--------------------------------------------------------------------------

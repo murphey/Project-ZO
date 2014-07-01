@@ -8,6 +8,7 @@
 <link rel="stylesheet" href="http://media02.hongkiat.com/responsive-web-nav/demo/normalize.css" type="text/css">
 
 {{HTML::style('css/admin-layout.css');}}
+{{HTML::style('css/pagination.css');}}
 
  {{HTML::script('ckeditor/ckeditor.js');}} 
 	@include('includes.head')
@@ -40,7 +41,6 @@
 		@yield('content')
 			
 	</div>
-
 	<footer class="row">
 		@include('admin.structure.admin-footer')
 	</footer>

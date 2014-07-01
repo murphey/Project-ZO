@@ -45,8 +45,12 @@ Route::group(array('before' => 'auth'), function()
 			'as' => 'sign-out',
 			'uses' => 'AccountController@getSignOut',
 	));	
+Route::get('pages/{id}/edit-page', 'HomeController@editor');
 
 	Route::resource('posts', 'PostController');	
+	Route::resource('quick', 'QuickscanController');	
+/*page edit*/
+			Route::resource('editor', 'EditpageController');
 });
 Route::group(array('before' => 'guest'), function()
 {
@@ -72,16 +76,32 @@ Route::get('/account/sign-in',  array('as' =>'sign-in', 'uses'=> 'AccountControl
 		Route::get('/account/activate/{code}',  array('as' =>'account-activate', 'uses'=> 'AccountController@getActivate'));
 	});
 	
-	Route::get('/', 'HomeController@test');
 
 Route::get('activate', function()
 {
      View::make('emails/auth/activate');
 });
 
+	Route::get('/', 'HomeController@all');
+	Route::get('nieuwsoverzicht', 'HomeController@overview');
+	Route::get('pagina/{category}', 'HomeController@basicpage');
+
+	Route::get('nieuws/{posts_slug}', 'HomeController@slug');
+	Route::post('search', 'HomeController@search');
+Route::get('quick', 'QuickscanController@getQuickscan');
 Route::get('contact', 'ContactController@contact');
 Route::get('index', 'AdminController@index');
-Route::get('about', 'AboutController@about');
+Route::get('toegankelijkheid', function(){ return View::make('pages/toegankelijkheid'); });
+/*Route::get('beperkingen', function(){ return View::make('pages/beperkingen'); });
+*/Route::get('diensten', function(){ return View::make('pages/diensten'); });
+Route::get('referenties', function(){ return View::make('pages/referenties'); });/*Database load.. make a controller*/
+Route::get('over', function(){ return View::make('pages/over'); });
+Route::get('nieuws', function(){ return View::make('pages/nieuws'); }); /*Database load.. controller*/
+Route::get('/{name}', function($name)
+{
+    return $name.' Bestaat niet';
+
+});
 
 //	Route::get('user/{username}', 'HomeController@test');
 // Route::get('contact',  function()
@@ -89,3 +109,4 @@ Route::get('about', 'AboutController@about');
 //     return View::make('pages.contact');
 // });
 
+ 

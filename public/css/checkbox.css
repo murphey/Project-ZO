@@ -1,0 +1,98 @@
+
+.hi {
+  margin:0 0 0.75em 0;
+}
+
+input[type="radio"] {
+    display:none;
+}
+
+input[type="radio"] + label span {
+    display:inline-block;
+    width:10px;
+    height:10px;
+    margin:-1px 4px 0 0;
+    vertical-align:middle;
+    cursor:pointer;
+    -moz-border-radius:  50%;
+    border-radius:  50%;
+}
+
+input[type="radio"] + label span {
+     background-color:white; 
+	 border:solid 2px #f6931e;
+	 /* dark */
+}
+
+input[type="radio"]:checked + label span{
+     background-color:#f6931e;
+}
+
+input[type="radio"] + label span,
+input[type="radio"]:checked + label span {
+  -webkit-transition:background-color 0.4s linear;
+  -o-transition:background-color 0.4s linear;
+  -moz-transition:background-color 0.4s linear;
+  transition:background-color 0.4s linear;
+   float: right;
+}
+
+.checks{background:red;
+background: red;
+width: 205px;
+top: -46px;
+position: relative;
+
+}
+.quick h3 {
+background: rgba(255, 146, 73, 0.31);
+padding: 12px;
+border: solid 3px rgba(229, 163, 84, 0.63);
+border-radius: 25px;
+/* margin-top: 47px; */
+width: 82%;
+margin: 13px;
+}
+
+.check-wrap {
+width: 336px;
+float: left;
+background: rgba(238, 147, 39, 0.67);
+border-radius: 5px 5px 0 0;
+}
+.check-wrap h4 {
+font-size: 1em;
+margin: auto 15px 20px;
+background: rgba(253, 237, 229, 0.29);
+border-radius: 5px;
+padding: 8px;
+opacity: 0.8;
+border:solid 2px rgba(229, 163, 84, 0.63)
+}
+.quick{	position: relative;
+	display: inline-block;
+	margin: 0;
+	width: 61%;
+	padding:0;
+	margin-bottom: 20px; }
+.quick input[type="email"], .quick input[type="text"]{background:rgba(253, 237, 229, 0.29);
+margin: auto 15px 20px;
+border-radius: 5px;
+border:none;
+width:280px;
+height:20px;
+padding: 8px;
+opacity: 0.8;
+
+}
+ .quick input[type="button"], input[type="reset"], input[type="submit"]{
+background-color:#f6931e; width:145px; font-weight:bold; color:#fff; margin:20px;  border-radius:5px;
+	border-bottom: solid 3px #DB831B;
+	padding:8px; font-size:18px;
+	border-top:none;border-left:none; border-right:none;
+}
+ .quick  h5{font-weight:bold; color:white; font-size:16px; padding:0; margin:0; margin-left:15px;}
+.probeer{margin-left: 100px;
+
+}
+.quick img{ float:right;}

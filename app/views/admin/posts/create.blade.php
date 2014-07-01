@@ -1,6 +1,7 @@
 @extends('admin.master')
 @section('content')
-{{Form::open(array('route' => 'posts.store'))}}
+<div class="sub-wrap">
+{{Form::open(array('route' => 'posts.store','files' => true))}}
 @if($errors->any())
 	<div class="alert-danger">
 		<a href="#" class="close" data-dismiss="alert">&times;</a>
@@ -31,5 +32,12 @@
 </div>
 {{Form::submit('Maak Post', array('class' => 'btn btn-succes'))}}
 {{ link_to_route('posts.index', 'Cancel', null, array('class' => 'btn btn-warning')) }}
+</br>
+
+{{Form::file('image')}}
+
+
+</br>
 {{ Form::close() }}
+</div>
 @stop

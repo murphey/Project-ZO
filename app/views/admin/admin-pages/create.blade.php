@@ -1,7 +1,7 @@
 @extends('admin.master')
 @section('content')
 
-Create an account
+<div id="sign-box">
 <form action="{{ URL::route('create-post') }}" class="form" method="post">
 	
 	{{ Form::label('name', 'Naam:', array('class' => 'name')) }}
@@ -22,5 +22,6 @@ Create an account
 	{{ Form::token() }}
 	<input type="submit" value="Account aanmaken"> 
 </form> 
+</div>
 </br>
 @stop

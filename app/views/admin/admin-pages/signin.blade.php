@@ -1,5 +1,8 @@
 @extends('admin.master')
 @section('content')
+<div id="sign-box">
+  <h2>Inloggen</h2>
+
 <form action="{{URL::route('sign-in-post')}}" method="post">
 {{ Form::label('email', 'E-mail:', array('class' => 'email')) }}
     @if($errors->has('email'))
@@ -10,11 +13,15 @@
     @if($errors->has('password'))
     {{$errors->first('password')}}
     @endif
-  {{ Form::password('password') }}  
-  {{ Form::label('remember', 'Remember me:', array('class' => 'checkbox')) }}
+  {{ Form::password('password') }}  <br>
   {{ Form::checkbox('remember') }}  
-{{Form::submit('Versturen')}}
+  {{ Form::label('remember', 'Onthoud mij!', array('class' => 'checkbox')) }}<br>
+  &nbsp;&nbsp; Wachtwoord vergeten? <a href="{{ URL::to('account/forgot-password')}}"> klik hier</a>
+ 
+{{Form::submit('Inloggen')}}
 {{Form::token()}}
-</form>   
+</form>  
+</div>
+
 </br>
 @stop

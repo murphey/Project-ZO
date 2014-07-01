@@ -1,6 +1,7 @@
 @extends('admin.master')
 @section('content')
-Wijzig uw wachtwoord.
+<div id="sign-box">
+<h2>Wijzig uw wachtwoord.</h2>
 </br>
 <form action="{{ URL::route('change-password-post') }}" class="form" method="post">
 {{ Form::label('old_password', 'Oude wachtwoord:', array('class' => 'password')) }}
@@ -24,5 +25,5 @@ Wijzig uw wachtwoord.
   {{ Form::token() }}
   {{Form::submit('Wachtwoord wijzigen')}}
 </form>
-
+</div>
 @stop

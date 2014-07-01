@@ -1,0 +1,97 @@
+<html>
+<head>
+	<title>Zorgeloos Onderwijs</title>
+	<link rel="stylesheet" href="style.css" type="text/css" />
+	<link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400' rel='stylesheet' type='text/css'>
+	<script src="jquery.js"></script>
+	<script>
+        $(document).ready(function (){
+            $(".tab1").click(function (){
+                //$(this).animate(function(){
+                    $('html, body').animate({
+                        scrollTop: $("#tabs").offset().top - 200
+                    }, 2000);
+                //});
+            });
+        });
+
+         // $(document).ready(function (){
+         // 	$(".tab1").click(function (){
+         // 		$(".tab1").html("");
+         // 	});
+         // });
+
+    </script>
+</head>
+<body>
+	
+	
+	<div id="nav">
+	<div style="margin: 0 auto;
+width: 1350px;">
+	<div class="logo"></div>
+		<h2>
+			<a href="#">Home</a> 
+			<a href="toegankelijkheid.html">Toegankelijkheid</a> 
+			<a href="#">Beperkingen</a> 
+			<a href="#">Diensten</a>
+			<a href="#">Referenties</a>
+			<a href="#">Over</a>
+			<a href="#">Nieuws</a>
+		</h2>
+	</div>
+</div>
+	<div id="fullpage">
+		<div id="tabs">
+		<a href="#"><div class="tab1">
+			Welkom
+		<div class="arrow-down"></div>	
+		</div>
+
+	</a>
+		<a href="#"><div class="tab2">
+			Nieuwe wet en regelgeving
+		<div class="arrow-down"></div>
+		</div>
+		
+	</a>
+		<a href="#"><div class="tab3">
+			Zorgeloos onderwijs
+		<div class="arrow-down"></div>
+		</div>
+
+	</a>
+	</div>
+	</div>
+
+	<div id="content1">
+		<div id="content_box">
+			<br />			Op de website van Zorgeloos Onderwijs (ZO). Als onafhankelijk adviesbureau streven wij naar een passende leeromgeving voor iedereen. Ook leerlingen en studenten met een (of meerdere) lichamelijke beperking(en) moeten volop mee kunnen doen in het reguliere onderwijs. Het onderwijs dient voor hen volledig toegankelijk te zijn.
+			<br /><br />
+			Dat heeft consequenties voor de inrichting en kwaliteit van de leer- en speelomgeving. Schoolgebouwen en -pleinen zullen in veel gevallen moeten worden aangepast, om ze toegankelijk te maken voor leerlingen/studenten met een beperking.
+
+		</div>
+	</div>
+	<div id="nieuws">
+		<div style="width=100%;">
+		<span class="titel" style="color: black; font-weight: bold; font-size: 16px;">Laatste nieuwtjes</span>
+		</div>		
+		<div id="nieuwsblok1">
+			<img src="images/nieuwspic.png" width="100%" style="margin-bottom:20px;"/>
+			<span class="titel" style="color: black; font-weight: bold; font-size: 16px;">Nieuws titel</span><br / ><br />
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce id metus non quam facilisis laoreet sed a risus. Proin dapibus neque non leo euismod, luctus imperdiet leo iaculis. Pellentesque gravida posuere sapien, nec lobortis massa tristique at. Vivamus elementum convallis purus, nec iaculis ipsum fermentum quis. Vestibulum libero nulla, mattis ac massa quis, lobortis porttitor nulla. Ut gravida nisi sed lacus sodales pellentesque sed non leo. 
+		</div>
+		<div id="nieuwsblok2">
+			<img src="images/nieuwspic.png" width="100%" style="margin-bottom:20px;"/>
+			<span class="titel" style="color: black; font-weight: bold; font-size: 16px;">Nieuws titel</span><br / ><br />
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce id metus non quam facilisis laoreet sed a risus. Proin dapibus neque non leo euismod, luctus imperdiet leo iaculis. Pellentesque gravida posuere sapien, nec lobortis massa tristique at. Vivamus elementum convallis purus, nec iaculis ipsum fermentum quis. Vestibulum libero nulla, mattis ac massa quis, lobortis porttitor nulla. Ut gravida nisi sed lacus sodales pellentesque sed non leo. 
+		</div>
+		<div id="nieuwsblok3">
+			<img src="images/nieuwspic.png" width="100%" style="margin-bottom:20px;"/>
+			<span class="titel" style="color: black; font-weight: bold; font-size: 16px;">Nieuws titel</span><br / ><br />
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce id metus non quam facilisis laoreet sed a risus. Proin dapibus neque non leo euismod, luctus imperdiet leo iaculis. Pellentesque gravida posuere sapien, nec lobortis massa tristique at. Vivamus elementum convallis purus, nec iaculis ipsum fermentum quis. Vestibulum libero nulla, mattis ac massa quis, lobortis porttitor nulla. Ut gravida nisi sed lacus sodales pellentesque sed non leo. 
+		</div>
+	</div>
+	<div id="footer"></div>
+</body>
+</html>

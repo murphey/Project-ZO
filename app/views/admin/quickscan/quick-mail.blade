@@ -1,0 +1,20 @@
+@extends('../layouts.default')
+@section('content')
+
+<h1>	Vink alle quickscan velden in.</h1>
+
+
+	<p>						u koos bij antwoord 1		|{{$post = quickscan::find(4)->q_4	}}
+	<br>
+
+	<?php
+		$letter = $post;
+		$advice = 'advice_'.$letter; //advice_a
+	?>
+<!--  	uw |/**  $posta = Advice::where('advice_'.$post, '=', 'advies 2 '.$post)->find(2)->$advice **/<br> -->
+
+
+	uw | {{$posta = Advice::find(6)->$advice}}<br>
+	{{Form::open(array('route' => 'quick.store'))}}
+
+@stop

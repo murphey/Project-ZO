@@ -3,7 +3,7 @@
 class PostController extends AdminController 
 {
 	public function index(){ 
-		$posts = Post::orderBy('created_at', 'DESC')->paginate(3);
+		$posts = Post::orderBy('created_at', 'DESC')->paginate(4);
 		return View::make('admin.posts.index')->with('posts', $posts);
 	}
 	/**
@@ -13,13 +13,20 @@ class PostController extends AdminController
 	public function create(){
 		return View::make('admin.posts.create');
 
-	}
+	} 
 	/**
 	* store a newly created resource in storage
 	**/
 	public function store(){
 		$input = Input::all();
 		$v = Validator::make($input, Post::$rules);
+		$image = Input::file('image');
+		$filename = $image->getClientOriginalName();
+
+		$destinationPath = public_path().'/img/db';
+		$uploadSuccess   = $image->move($destinationPath, $filename);
+		var_dump($filename);
+
 		if($v->passes()){
 			$post = new Post;
 			$post->posts_title = Input::get('posts_title');
@@ -28,9 +35,10 @@ class PostController extends AdminController
 			$post->posts_desc = Input::get('posts_desc');
 			$post->posts_slug = Str::slug(Input::get('posts_title'));
 			$post->posts_user_id = Auth::user()->id;
+			$post->photo = $filename;
 			$post->save();
+						return Redirect::route('posts.index');
 
-			return Redirect::route('posts.index');
 		}
 		return Redirect::back()->withErrors($v);
 	}
@@ -44,8 +52,7 @@ class PostController extends AdminController
 		$date = $post->created_at;
 		setlocale(LC_TIME, 'Europe/Amsterdam');
 		$date = $date->formatlocalized('%A %d %B %Y');
-		return View::make('admin.posts.show')->with('post', $post)->with('date', $date);
-
+		return View::make('pages.nieuws')->with('post', $post)->with('date', $date);
 	}
 	/**
 	* show the form for editing the specified resource

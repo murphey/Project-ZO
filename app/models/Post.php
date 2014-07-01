@@ -7,7 +7,7 @@ class Post extends Eloquent{
      'posts_content' => 'required'
 		);
 	public function user(){
-		return  $this->belongTo('user', 'id');
+		return  $this->belongsTo('User', 'posts_user_id');
 	}
 	
 }
